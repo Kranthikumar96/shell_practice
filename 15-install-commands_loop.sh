@@ -8,7 +8,7 @@ N="\e[0m"
 LOG_FOLDER="/var/log/shellscript-log"
 SCRIPT_NAME=$(echo $0|cut -d "." -f1)
 LOG_FILE="$LOG_FOLDER/$SCRIPT_NAME.log"
-PACKAGES=("mysql" "python" "nginx" "http")
+PACKAGES=("mysql" "python" "nginx" "httpd")
 
 mkdir -p $LOG_FOLDER
 echo "The Script was executing at $(date)" | tee -a $LOG_FILE
